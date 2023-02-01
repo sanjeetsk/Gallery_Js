@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+    background-color: lightsteelblue;
+  }
+
+    #images {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+    }
+
+    #display {
+      margin: 20px;
+      justify-content: center;
+      align-items: center;
+      background-color: lightgray;
+    }
+
+    #myForm{
+      margin-top: 50px;
+      margin-left: 33vw;
+      justify-content: center;
+      align-items: center;
+    }
+
+    label{
+      font-weight: bolder;
+      font-size: larger;
+    }
+
+    input[type=text], input[type=email],
+    submit {
+      width: 35%;
+      border: 1px solid #ccc;
+      border-radius: 0.5vw;
+      box-sizing: border-box;
+      font-size: 2vw;
+      color: black;
+    }
+
+    input[type=submit] {
+      width: 17%;
+      background-color: #ccc;
+      color: black;
+      border: none;
+      cursor: pointer;
+      font-size: 2vw;
+    }
+
+    input[type=submit]:hover {
+      background-color: #45a049;
+    }
+
+    #dice-container{
+      margin-top: 20px;
+      margin-left: 40vw;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #display,#result{
+      font-weight: bolder;
+      font-size: larger;
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="images">
+    <div id="image1"><img
+        src="https://c4.wallpaperflare.com/wallpaper/787/18/502/cars-hd-widescreen-high-quality-desktop-hd-lamborghini-aventador-high-resolution-cars-disney-desktop-movie-hd-widescreen-quality-hd-wallpaper-preview.jpg"
+        height="300px" width="300px" alt=""></div>
+    <div id="image2"><img
+        src="https://c4.wallpaperflare.com/wallpaper/157/340/999/car-sports-car-supercar-lamborghini-aventador-wallpaper-preview.jpg"
+        alt="" height="300px" width="300px"></div>
+    <div id="image3"><img
+        src="https://c4.wallpaperflare.com/wallpaper/355/994/562/car-lamborghini-aventador-supercars-vehicle-wallpaper-preview.jpg"
+        alt="" height="300px" width="300px"></div>
+    <div id="image4"><img
+        src="https://c4.wallpaperflare.com/wallpaper/646/602/420/the-aventador-wallpaper-modified-by-aarif-wallpaper-preview.jpg"
+        alt="" height="300px" width="300px"></div>
+  </div>
+
+  <form id="myForm" style="display: none;">
+    <label>Name:</label>
+    <input type="text" id="name" required><br><br>
+    <label>Email:</label>
+    <input type="email" id="email" required><br><br>
+    <label>Username:</label>
+    <input type="text" id="username" required><br><br>
+    <!-- <button type="button" onclick="submitForm()">Submit</button> -->
+    <input type="submit" value="SignUp">
+  </form>
+  <div id="dice-container" style="display: none;">
+    <img
+      src="https://img.freepik.com/premium-photo/white-dice-isolated-white-background-3d-render_167862-7497.jpg?w=826"
+      width="150px" height="150px" id="dice" alt="dice">
+  </div>
+  <h4 id="result"></h4>
+  <div id="display"></div>
+  <script src="script.js"></script>
+</body>
+
+</html>
