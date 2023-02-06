@@ -14,8 +14,6 @@ form.addEventListener("submit", function (event) {
     name = document.getElementById("name").value;
     email = document.getElementById("email").value;
     userName = document.getElementById("username").value;
-    // document.getElementById("disp").innerHTML = "Name: " + name + "<br>Email: " + email;
-    // form.style.display = "none";
     let heading1 = document.createElement("h1");
     heading1.setAttribute("id", "h1");
     heading1.innerHTML = "Click on the second image";
@@ -23,20 +21,13 @@ form.addEventListener("submit", function (event) {
     display.append(heading1);
 });
 
-var flag = false;
 var img2 = document.getElementById("image2");
 
 img2.addEventListener("click", userDetail);
 
 function userDetail(e){
     e.preventDefault();
-    // let div = document.createElement("div");
-    // div.setAttribute("id", "div1");
-    // div.innerHTML = name + " " + email + " " + userName;  
-    // document.body.appendChild(div);
-    // img1.removeEventListener("click", function(){});
     display.innerHTML = "&emsp;&emsp;Name : " + name + "<br><br>&emsp;&emsp;Username: " + userName +"<br><br><br>&emsp;&emsp;Click on the third image";
-    flag=true;
 };
 
 var img3 = document.getElementById("image3");
